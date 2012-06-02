@@ -3,7 +3,7 @@
 //  Knob
 //
 //  Created by Krutarth Majithiya on 2/06/12.
-//  Copyright (c) 2012 Swinburne University. All rights reserved.
+//  Copyright (c) 2012. All rights reserved.
 //
 
 #import "KnobViewSensor.h"
