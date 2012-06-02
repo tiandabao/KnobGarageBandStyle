@@ -8,7 +8,7 @@ I have managed to finish garage band style Knob and the repo has been updated. P
 
 > Note :
 
-- The tutorial is a great start to know the Math and all the tricks. However the Knob I have pushed to the repo is more restrictive. The project in above link has a know which continuously spins. But I wanted some which goes from MIN to MAX. Please feel free to change this interaction style if you want.
+- The tutorial is a great start to know the Math and all the tricks. However the Knob I have pushed to the repo is more restrictive. The project in above link has a knob which continuously spins. But I wanted some which goes from MIN to MAX. Please feel free to change this interaction style if you want.
 
 
 
