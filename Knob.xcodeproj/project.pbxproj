@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78A1F047157A21B600AC4A5A /* knob.png in Resources */ = {isa = PBXBuildFile; fileRef = 78A1F046157A21B600AC4A5A /* knob.png */; };
+		78A1F04A157A221200AC4A5A /* bacjground.png in Resources */ = {isa = PBXBuildFile; fileRef = 78A1F049157A221200AC4A5A /* bacjground.png */; };
+		78A1F04E157A263E00AC4A5A /* wooden-panel.png in Resources */ = {isa = PBXBuildFile; fileRef = 78A1F04D157A263E00AC4A5A /* wooden-panel.png */; };
+		78A1F054157A2A5300AC4A5A /* woodTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 78A1F053157A2A5300AC4A5A /* woodTab.png */; };
+		78A1F05C157A326500AC4A5A /* KnobViewSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A1F05B157A326500AC4A5A /* KnobViewSensor.m */; };
+		78A1F060157A33E000AC4A5A /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A1F05F157A33E000AC4A5A /* Helper.m */; };
 		78E74B481495A2BF001338E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E74B471495A2BF001338E7 /* UIKit.framework */; };
 		78E74B4A1495A2BF001338E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E74B491495A2BF001338E7 /* Foundation.framework */; };
 		78E74B4C1495A2BF001338E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E74B4B1495A2BF001338E7 /* CoreGraphics.framework */; };
@@ -15,16 +21,18 @@
 		78E74B581495A2BF001338E7 /* KnobAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E74B571495A2BF001338E7 /* KnobAppDelegate.m */; };
 		78E74B5B1495A2BF001338E7 /* KnobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E74B5A1495A2BF001338E7 /* KnobViewController.m */; };
 		78E74B5E1495A2BF001338E7 /* KnobViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78E74B5C1495A2BF001338E7 /* KnobViewController.xib */; };
-		78E74B661495A640001338E7 /* KnobDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E74B651495A640001338E7 /* KnobDrawing.m */; };
-		78E74B831495EB64001338E7 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 78E74B7E1495EB64001338E7 /* 2.png */; };
-		78E74B841495EB64001338E7 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 78E74B7F1495EB64001338E7 /* 3.png */; };
-		78E74B851495EB64001338E7 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 78E74B801495EB64001338E7 /* 4.png */; };
-		78E74B861495EB64001338E7 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 78E74B811495EB64001338E7 /* 1.png */; };
-		78E74B871495EB64001338E7 /* Off.png in Resources */ = {isa = PBXBuildFile; fileRef = 78E74B821495EB64001338E7 /* Off.png */; };
 		78E74B8A1495EFE0001338E7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E74B891495EFE0001338E7 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78A1F046157A21B600AC4A5A /* knob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = knob.png; sourceTree = "<group>"; };
+		78A1F049157A221200AC4A5A /* bacjground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bacjground.png; sourceTree = "<group>"; };
+		78A1F04D157A263E00AC4A5A /* wooden-panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wooden-panel.png"; sourceTree = "<group>"; };
+		78A1F053157A2A5300AC4A5A /* woodTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woodTab.png; sourceTree = "<group>"; };
+		78A1F05A157A326500AC4A5A /* KnobViewSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnobViewSensor.h; sourceTree = "<group>"; };
+		78A1F05B157A326500AC4A5A /* KnobViewSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnobViewSensor.m; sourceTree = "<group>"; };
+		78A1F05E157A33E000AC4A5A /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		78A1F05F157A33E000AC4A5A /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
 		78E74B431495A2BF001338E7 /* Knob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E74B471495A2BF001338E7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		78E74B491495A2BF001338E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,13 +46,6 @@
 		78E74B591495A2BF001338E7 /* KnobViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnobViewController.h; sourceTree = "<group>"; };
 		78E74B5A1495A2BF001338E7 /* KnobViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnobViewController.m; sourceTree = "<group>"; };
 		78E74B5D1495A2BF001338E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/KnobViewController.xib; sourceTree = "<group>"; };
-		78E74B641495A640001338E7 /* KnobDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnobDrawing.h; sourceTree = "<group>"; };
-		78E74B651495A640001338E7 /* KnobDrawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnobDrawing.m; sourceTree = "<group>"; };
-		78E74B7E1495EB64001338E7 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
-		78E74B7F1495EB64001338E7 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
-		78E74B801495EB64001338E7 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
-		78E74B811495EB64001338E7 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
-		78E74B821495EB64001338E7 /* Off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Off.png; sourceTree = "<group>"; };
 		78E74B891495EFE0001338E7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -63,6 +64,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78A1F05D157A33C100AC4A5A /* HelperClass */ = {
+			isa = PBXGroup;
+			children = (
+				78A1F05E157A33E000AC4A5A /* Helper.h */,
+				78A1F05F157A33E000AC4A5A /* Helper.m */,
+			);
+			name = HelperClass;
+			sourceTree = "<group>";
+		};
 		78E74B381495A2BF001338E7 = {
 			isa = PBXGroup;
 			children = (
@@ -94,12 +104,13 @@
 		78E74B4D1495A2BF001338E7 /* Knob */ = {
 			isa = PBXGroup;
 			children = (
+				78A1F05D157A33C100AC4A5A /* HelperClass */,
 				78E74B561495A2BF001338E7 /* KnobAppDelegate.h */,
 				78E74B571495A2BF001338E7 /* KnobAppDelegate.m */,
+				78A1F05A157A326500AC4A5A /* KnobViewSensor.h */,
+				78A1F05B157A326500AC4A5A /* KnobViewSensor.m */,
 				78E74B591495A2BF001338E7 /* KnobViewController.h */,
 				78E74B5A1495A2BF001338E7 /* KnobViewController.m */,
-				78E74B641495A640001338E7 /* KnobDrawing.h */,
-				78E74B651495A640001338E7 /* KnobDrawing.m */,
 				78E74B5C1495A2BF001338E7 /* KnobViewController.xib */,
 				78E74B881495EB69001338E7 /* KnobImages */,
 				78E74B4E1495A2BF001338E7 /* Supporting Files */,
@@ -121,11 +132,10 @@
 		78E74B881495EB69001338E7 /* KnobImages */ = {
 			isa = PBXGroup;
 			children = (
-				78E74B7E1495EB64001338E7 /* 2.png */,
-				78E74B7F1495EB64001338E7 /* 3.png */,
-				78E74B801495EB64001338E7 /* 4.png */,
-				78E74B811495EB64001338E7 /* 1.png */,
-				78E74B821495EB64001338E7 /* Off.png */,
+				78A1F053157A2A5300AC4A5A /* woodTab.png */,
+				78A1F04D157A263E00AC4A5A /* wooden-panel.png */,
+				78A1F049157A221200AC4A5A /* bacjground.png */,
+				78A1F046157A21B600AC4A5A /* knob.png */,
 			);
 			name = KnobImages;
 			sourceTree = "<group>";
@@ -183,11 +193,10 @@
 			files = (
 				78E74B521495A2BF001338E7 /* InfoPlist.strings in Resources */,
 				78E74B5E1495A2BF001338E7 /* KnobViewController.xib in Resources */,
-				78E74B831495EB64001338E7 /* 2.png in Resources */,
-				78E74B841495EB64001338E7 /* 3.png in Resources */,
-				78E74B851495EB64001338E7 /* 4.png in Resources */,
-				78E74B861495EB64001338E7 /* 1.png in Resources */,
-				78E74B871495EB64001338E7 /* Off.png in Resources */,
+				78A1F047157A21B600AC4A5A /* knob.png in Resources */,
+				78A1F04A157A221200AC4A5A /* bacjground.png in Resources */,
+				78A1F04E157A263E00AC4A5A /* wooden-panel.png in Resources */,
+				78A1F054157A2A5300AC4A5A /* woodTab.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +210,8 @@
 				78E74B541495A2BF001338E7 /* main.m in Sources */,
 				78E74B581495A2BF001338E7 /* KnobAppDelegate.m in Sources */,
 				78E74B5B1495A2BF001338E7 /* KnobViewController.m in Sources */,
-				78E74B661495A640001338E7 /* KnobDrawing.m in Sources */,
+				78A1F05C157A326500AC4A5A /* KnobViewSensor.m in Sources */,
+				78A1F060157A33E000AC4A5A /* Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +286,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Knob/Knob-Prefix.pch";
 				INFOPLIST_FILE = "Knob/Knob-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -287,7 +299,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Knob/Knob-Prefix.pch";
 				INFOPLIST_FILE = "Knob/Knob-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -311,6 +325,7 @@
 				78E74B631495A2BF001338E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

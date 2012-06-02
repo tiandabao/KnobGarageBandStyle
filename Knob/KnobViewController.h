@@ -6,12 +6,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "KnobDrawing.h"
+#import "KnobViewSensor.h"
 
-@interface KnobViewController : UIViewController
+@interface KnobViewController : UIViewController<KnobViewSensorDelegate>
 
-@property (retain, nonatomic) IBOutlet KnobDrawing *knDrawingView;
-
-- (IBAction)knobControlPressed:(id)sender;
+@property  (nonatomic, strong) IBOutlet UIImageView *knobImage;
 
 @end

@@ -6,45 +6,68 @@
 //
 
 #import "KnobViewController.h"
-#import "KnobDrawing.h"
+
+
+@interface KnobViewController() {
+@private CGFloat imageAngle;
+@private KnobViewSensor *knobSensor;
+}
+-(void) startKnobSensor;
+@end
+
 @implementation KnobViewController
 
-@synthesize knDrawingView;
+@synthesize knobImage;
+
+#pragma mark - Start sensing 
+
+//KnobImage position calculation as well as determining the center point
+- (void) startKnobSensor {
+    // calculate center and radius of the control
+    CGPoint midPoint = CGPointMake(knobImage.frame.origin.x + knobImage.frame.size.width / 2,
+                                   knobImage.frame.origin.y + knobImage.frame.size.height / 2);
+    CGFloat outRadius = knobImage.frame.size.width / 2;
+    
+    // outRadius / 4 is arbitrary, just choose something >> 0 to avoid strange 
+    // effects when touching the control near of it's center
+    knobSensor = [[KnobViewSensor alloc] initWithMidPoint: midPoint innerRadius: outRadius / 4 outerRadius: outRadius target: self];
+    [self.view addGestureRecognizer: knobSensor];
+}
+
+#pragma mark - Sensor delegate method
+
+- (void) rotation: (CGFloat) angle
+{
+    // calculate rotation angle
+    imageAngle += angle;
+    if (imageAngle > 360)
+        imageAngle -= 360;
+    else if (imageAngle < -360)
+        imageAngle += 360;
+    
+    // rotate image and update text field
+    knobImage.transform = CGAffineTransformMakeRotation(imageAngle *  M_PI / 180);
+}
+
+- (void) finalAngle: (CGFloat) angle
+{
+    NSLog(@"Angle = %f", angle);
+}
 
 #pragma mark - View lifecycle
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
+    imageAngle = MIN_ANGLE;
+    [self rotation:imageAngle];
+    [self startKnobSensor];
 }
 
-/* defining constants according to control button's tag id */
-
-#define knOFF 21
-#define knONE 22
-#define knTWO 23
-#define knTHREE 24
-#define knFOUR 25
-
-- (IBAction)knobControlPressed:(id)sender 
-{
-    if ([sender tag] == knOFF) {
-        [knDrawingView setKnobValue:@"0"];
-    } else if ([sender tag] == knONE) {
-        [knDrawingView setKnobValue:@"1"];
-    } else if ([sender tag] == knTWO) {
-        [knDrawingView setKnobValue:@"2"];
-    } else if ([sender tag] == knTHREE) {
-        [knDrawingView setKnobValue:@"3"];
-    } else if ([sender tag] == knFOUR) {
-        [knDrawingView setKnobValue:@"4"];        
-    }
-    [knDrawingView setNeedsDisplay];
+- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    return NO;
 }
 
--(void) dealloc
-{
-    [knDrawingView release];
+- (void) dealloc{
+    [super dealloc];
 }
 
 @end
