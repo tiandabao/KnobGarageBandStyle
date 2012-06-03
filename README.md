@@ -14,6 +14,8 @@ Addition
 ==========
 After completing the knob rotation, I thought, I should make use of this knob. So, I created curtains as normal UIImageView and changing the mid point of that UIImageView based on how much rotation is being made. There are some mathematical glitches, I will solved it in my future commits. 
 
+Stamp looking image courtesy : http://www.icondeposit.com/design:79
+
 Enjoy!
 
 
