@@ -10,5 +10,11 @@ I have managed to finish garage band style Knob and the repo has been updated. P
 
 - The tutorial is a great start to know the Math and all the tricks. However the Knob I have pushed to the repo is more restrictive. The project in above link has a knob which continuously spins. But I wanted some which goes from MIN to MAX. Please feel free to change this interaction style if you want.
 
+Addition
+==========
+After completing the knob rotation, I thought, I should make use of this knob. So, I created curtains as normal UIImageView and changing the mid point of that UIImageView based on how much rotation is being made. There are some mathematical glitches, I will solved it in my future commits. 
+
+Enjoy!
+
 
 
