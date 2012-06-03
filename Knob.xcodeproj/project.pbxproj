@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		788C9C98157AE1100041E596 /* woodTabVerticle.png in Resources */ = {isa = PBXBuildFile; fileRef = 788C9C97157AE1100041E596 /* woodTabVerticle.png */; };
+		788C9CA2157AF08E0041E596 /* RightSide.png in Resources */ = {isa = PBXBuildFile; fileRef = 788C9CA0157AF08E0041E596 /* RightSide.png */; };
+		788C9CA3157AF08E0041E596 /* LeftSide.png in Resources */ = {isa = PBXBuildFile; fileRef = 788C9CA1157AF08E0041E596 /* LeftSide.png */; };
+		788C9CA5157AF1890041E596 /* depth.png in Resources */ = {isa = PBXBuildFile; fileRef = 788C9CA4157AF1890041E596 /* depth.png */; };
+		788C9CA7157AF1FE0041E596 /* depth_flipped.png in Resources */ = {isa = PBXBuildFile; fileRef = 788C9CA6157AF1FE0041E596 /* depth_flipped.png */; };
+		788C9CA9157AF3100041E596 /* depth_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 788C9CA8157AF3100041E596 /* depth_top.png */; };
+		788C9CB1157B18090041E596 /* stamp.png in Resources */ = {isa = PBXBuildFile; fileRef = 788C9CB0157B18090041E596 /* stamp.png */; };
 		78A1F047157A21B600AC4A5A /* knob.png in Resources */ = {isa = PBXBuildFile; fileRef = 78A1F046157A21B600AC4A5A /* knob.png */; };
 		78A1F04A157A221200AC4A5A /* bacjground.png in Resources */ = {isa = PBXBuildFile; fileRef = 78A1F049157A221200AC4A5A /* bacjground.png */; };
 		78A1F04E157A263E00AC4A5A /* wooden-panel.png in Resources */ = {isa = PBXBuildFile; fileRef = 78A1F04D157A263E00AC4A5A /* wooden-panel.png */; };
@@ -25,6 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		788C9C97157AE1100041E596 /* woodTabVerticle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woodTabVerticle.png; sourceTree = "<group>"; };
+		788C9CA0157AF08E0041E596 /* RightSide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightSide.png; sourceTree = "<group>"; };
+		788C9CA1157AF08E0041E596 /* LeftSide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftSide.png; sourceTree = "<group>"; };
+		788C9CA4157AF1890041E596 /* depth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = depth.png; sourceTree = "<group>"; };
+		788C9CA6157AF1FE0041E596 /* depth_flipped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = depth_flipped.png; sourceTree = "<group>"; };
+		788C9CA8157AF3100041E596 /* depth_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = depth_top.png; sourceTree = "<group>"; };
+		788C9CB0157B18090041E596 /* stamp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stamp.png; sourceTree = "<group>"; };
 		78A1F046157A21B600AC4A5A /* knob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = knob.png; sourceTree = "<group>"; };
 		78A1F049157A221200AC4A5A /* bacjground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bacjground.png; sourceTree = "<group>"; };
 		78A1F04D157A263E00AC4A5A /* wooden-panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wooden-panel.png"; sourceTree = "<group>"; };
@@ -133,6 +147,13 @@
 			isa = PBXGroup;
 			children = (
 				78A1F053157A2A5300AC4A5A /* woodTab.png */,
+				788C9CA0157AF08E0041E596 /* RightSide.png */,
+				788C9CA8157AF3100041E596 /* depth_top.png */,
+				788C9CA4157AF1890041E596 /* depth.png */,
+				788C9CB0157B18090041E596 /* stamp.png */,
+				788C9CA6157AF1FE0041E596 /* depth_flipped.png */,
+				788C9CA1157AF08E0041E596 /* LeftSide.png */,
+				788C9C97157AE1100041E596 /* woodTabVerticle.png */,
 				78A1F04D157A263E00AC4A5A /* wooden-panel.png */,
 				78A1F049157A221200AC4A5A /* bacjground.png */,
 				78A1F046157A21B600AC4A5A /* knob.png */,
@@ -197,6 +218,13 @@
 				78A1F04A157A221200AC4A5A /* bacjground.png in Resources */,
 				78A1F04E157A263E00AC4A5A /* wooden-panel.png in Resources */,
 				78A1F054157A2A5300AC4A5A /* woodTab.png in Resources */,
+				788C9C98157AE1100041E596 /* woodTabVerticle.png in Resources */,
+				788C9CA2157AF08E0041E596 /* RightSide.png in Resources */,
+				788C9CA3157AF08E0041E596 /* LeftSide.png in Resources */,
+				788C9CA5157AF1890041E596 /* depth.png in Resources */,
+				788C9CA7157AF1FE0041E596 /* depth_flipped.png in Resources */,
+				788C9CA9157AF3100041E596 /* depth_top.png in Resources */,
+				788C9CB1157B18090041E596 /* stamp.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

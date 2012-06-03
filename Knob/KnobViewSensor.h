@@ -12,10 +12,12 @@
 //Set the minium and Maximum rotation
 #define MIN_ANGLE -68.0
 #define MAX_ANGLE 275.0
+#define CURTAIN_OPEN_OFFSET 1.0
 
 @protocol KnobViewSensorDelegate <UIGestureRecognizerDelegate>
 @optional
 - (void) rotation: (CGFloat) angle;
+- (void) curtainAnimation: (int) offSet withRotationDirection:(BOOL) isClockWise;
 - (void) finalAngle:(CGFloat) cumulatedAngle;
 @end
 

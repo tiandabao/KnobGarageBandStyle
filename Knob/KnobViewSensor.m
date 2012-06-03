@@ -76,7 +76,20 @@
             // sum up single steps
             cumulatedAngle += angle;
             
-            // call delegate
+            // call delegate for curtain
+            BOOL isClockWise;
+            //Speed to close the curtain Math correction needed
+            int delta = 0;
+            if (angle > 2.0f || angle > -2.0f) {
+                delta = 1;
+            }else if( angle > 6.0f || angle > -6.0f) {
+                delta = 2;
+            }else if(angle >9.0f || angle > -9.0f) {
+                delta = 3;
+            }
+            if (angle > 0.0) { isClockWise = YES; } else { isClockWise = NO; };
+            [target curtainAnimation:(CURTAIN_OPEN_OFFSET + delta) withRotationDirection:isClockWise];
+            // call delegate for rotation
             if ([target respondsToSelector: @selector(rotation:)]){
                 [target rotation:angle];
             }

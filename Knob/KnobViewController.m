@@ -7,6 +7,12 @@
 
 #import "KnobViewController.h"
 
+//Curtain Boundaries
+
+#define LEFT_CENTER_START 74
+#define LEFT_CENTER_END -28
+#define RIGHT_CENTER_START 236
+#define RIGHT_CENTER_END 344
 
 @interface KnobViewController() {
 @private CGFloat imageAngle;
@@ -18,6 +24,8 @@
 @implementation KnobViewController
 
 @synthesize knobImage;
+@synthesize leftSideCurtain;
+@synthesize rightSideCurtain;
 
 #pragma mark - Start sensing 
 
@@ -49,6 +57,21 @@
     knobImage.transform = CGAffineTransformMakeRotation(imageAngle *  M_PI / 180);
 }
 
+-(void) curtainAnimation:(int)offSet withRotationDirection:(BOOL)isClockWise {
+    //OPPORTUNITY, This calculation is bit broken some times curtains remain open after reaching at min. Will fix later but some will fix this before then please let me know.
+    if(isClockWise){
+        if((leftSideCurtain.center.x - offSet) > LEFT_CENTER_END && (rightSideCurtain.center.x + offSet) < RIGHT_CENTER_END) {
+            leftSideCurtain.center = CGPointMake(leftSideCurtain.center.x - offSet, leftSideCurtain.center.y);
+            rightSideCurtain.center = CGPointMake(rightSideCurtain.center.x + offSet, rightSideCurtain.center.y);
+        }
+    } else {
+        if((leftSideCurtain.center.x + offSet) < LEFT_CENTER_START && (rightSideCurtain.center.x - offSet) > RIGHT_CENTER_START) {
+            leftSideCurtain.center = CGPointMake(leftSideCurtain.center.x + offSet, leftSideCurtain.center.y);
+            rightSideCurtain.center = CGPointMake(rightSideCurtain.center.x - offSet, rightSideCurtain.center.y);
+        }
+    }
+}
+
 - (void) finalAngle: (CGFloat) angle
 {
     NSLog(@"Angle = %f", angle);
@@ -67,7 +90,14 @@
 }
 
 - (void) dealloc{
+    [leftSideCurtain release];
+    [rightSideCurtain release];
     [super dealloc];
 }
 
+- (void)viewDidUnload {
+    [self setLeftSideCurtain:nil];
+    [self setRightSideCurtain:nil];
+    [super viewDidUnload];
+}
 @end
